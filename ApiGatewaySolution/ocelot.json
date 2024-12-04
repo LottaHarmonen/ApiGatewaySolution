@@ -1,0 +1,104 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/Pizzas",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "MenuService.Api",
+          "Port": 5093
+        }
+      ],
+      "DownstreamPathTemplate": "/"
+    },
+    {
+      "UpstreamPathTemplate": "/Pizzas/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "MenuService.Api",
+          "Port": 5093
+        }
+      ],
+      "DownstreamPathTemplate": "/{id}"
+    },
+    {
+      "UpstreamPathTemplate": "/Pizza/name/{name}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "MenuService.Api",
+          "Port": 5093
+        }
+      ],
+      "DownstreamPathTemplate": "/name/{name}"
+    },
+    {
+      "UpstreamPathTemplate": "/Payment/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "PaymentService.Api",
+          "Port": 5062
+        }
+      ],
+      "DownstreamPathTemplate": "/{id}"
+    },
+    {
+      "UpstreamPathTemplate": "/Payment",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "PaymentService.Api",
+          "Port": 5062
+        }
+      ],
+      "DownstreamPathTemplate": "/"
+    },
+    {
+      "UpstreamPathTemplate": "/Order",
+      "UpstreamHttpMethod": [ "POST" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService.Api",
+          "Port": 5148
+        }
+      ],
+      "DownstreamPathTemplate": "/"
+    },
+    {
+      "UpstreamPathTemplate": "/Order/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService.Api",
+          "Port": 5148
+        }
+      ],
+      "DownstreamPathTemplate": "/{id}"
+    },
+    {
+      "UpstreamPathTemplate": "/Orders",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "OrderService.Api",
+          "Port": 5148
+        }
+      ],
+      "DownstreamPathTemplate": "/"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5183/"
+  }
+}
+
