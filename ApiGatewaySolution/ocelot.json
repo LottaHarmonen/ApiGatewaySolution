@@ -7,7 +7,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "menu-service",
-          "Port": 5093
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/pizzas"
@@ -19,7 +19,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "menu-service",
-          "Port": 5093
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/pizzas/{id}"
@@ -31,7 +31,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "menu-service",
-          "Port": 5093
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/pizzas/name/{name}"
@@ -43,7 +43,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "payment-service",
-          "Port": 5062
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/payment/{id}"
@@ -55,7 +55,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "payment-service",
-          "Port": 5062
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/payment"
@@ -67,7 +67,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "order-service",
-          "Port": 5148
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/"
@@ -79,7 +79,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "order-service",
-          "Port": 5148
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/orders/{id}"
@@ -91,7 +91,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "order-service",
-          "Port": 5148
+          "Port": 8080
         }
       ],
       "DownstreamPathTemplate": "/api/orders/{id}"
