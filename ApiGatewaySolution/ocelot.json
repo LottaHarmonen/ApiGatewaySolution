@@ -25,7 +25,7 @@
       "DownstreamPathTemplate": "/api/pizzas/{id}"
     },
     {
-      "UpstreamPathTemplate": "/Pizza/name/{name}",
+      "UpstreamPathTemplate": "/Pizzas/name/{name}",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -70,7 +70,7 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/"
+      "DownstreamPathTemplate": "/api/order"
     },
     {
       "UpstreamPathTemplate": "/Order/{id}",
@@ -82,10 +82,10 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/orders/{id}"
+      "DownstreamPathTemplate": "/api/order/{id}"
     },
     {
-      "UpstreamPathTemplate": "/Orders",
+      "UpstreamPathTemplate": "/Order",
       "UpstreamHttpMethod": [ "GET" ],
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -94,7 +94,7 @@
           "Port": 8080
         }
       ],
-      "DownstreamPathTemplate": "/api/orders/{id}"
+      "DownstreamPathTemplate": "/api/order/{id}"
     }
   ],
   "GlobalConfiguration": {
