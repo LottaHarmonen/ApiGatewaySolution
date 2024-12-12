@@ -6,11 +6,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "MenuService.Api",
+          "Host": "menu-service",
           "Port": 5093
         }
       ],
-      "DownstreamPathTemplate": "/"
+      "DownstreamPathTemplate": "/api/pizzas"
     },
     {
       "UpstreamPathTemplate": "/Pizzas/{id}",
@@ -18,11 +18,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "MenuService.Api",
+          "Host": "menu-service",
           "Port": 5093
         }
       ],
-      "DownstreamPathTemplate": "/{id}"
+      "DownstreamPathTemplate": "/api/pizzas/{id}"
     },
     {
       "UpstreamPathTemplate": "/Pizza/name/{name}",
@@ -30,11 +30,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "MenuService.Api",
+          "Host": "menu-service",
           "Port": 5093
         }
       ],
-      "DownstreamPathTemplate": "/name/{name}"
+      "DownstreamPathTemplate": "/api/pizzas/name/{name}"
     },
     {
       "UpstreamPathTemplate": "/Payment/{id}",
@@ -42,11 +42,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "PaymentService.Api",
+          "Host": "payment-service",
           "Port": 5062
         }
       ],
-      "DownstreamPathTemplate": "/{id}"
+      "DownstreamPathTemplate": "/api/payment/{id}"
     },
     {
       "UpstreamPathTemplate": "/Payment",
@@ -54,11 +54,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "PaymentService.Api",
+          "Host": "payment-service",
           "Port": 5062
         }
       ],
-      "DownstreamPathTemplate": "/"
+      "DownstreamPathTemplate": "/api/payment"
     },
     {
       "UpstreamPathTemplate": "/Order",
@@ -66,7 +66,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OrderService.Api",
+          "Host": "order-service",
           "Port": 5148
         }
       ],
@@ -78,11 +78,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OrderService.Api",
+          "Host": "order-service",
           "Port": 5148
         }
       ],
-      "DownstreamPathTemplate": "/{id}"
+      "DownstreamPathTemplate": "/api/orders/{id}"
     },
     {
       "UpstreamPathTemplate": "/Orders",
@@ -90,15 +90,14 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "OrderService.Api",
+          "Host": "order-service",
           "Port": 5148
         }
       ],
-      "DownstreamPathTemplate": "/"
+      "DownstreamPathTemplate": "/api/orders/{id}"
     }
   ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5183/"
   }
 }
-
