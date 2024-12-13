@@ -29,7 +29,7 @@ jobs:
       - name: Build Docker Image
         run: |
           IMAGE_NAME="lottah/apigateway"
-          docker build -t $IMAGE_NAME:${{ env.TAG_NAME }} -f ApiGatewaySolution/Dockerfile .
+          docker build -t $IMAGE_NAME:${{ env.TAG_NAME }} -f Dockerfile .
 
       # Step 5: Push Docker Image to Registry
       - name: Push Docker Image
