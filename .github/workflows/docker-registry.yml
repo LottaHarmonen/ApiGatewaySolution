@@ -34,5 +34,5 @@ jobs:
       # Step 5: Push Docker Image to Registry
       - name: Push Docker Image
         run: |
-          IMAGE_NAME="lottah/ApiGateway"
+          IMAGE_NAME="lottah/apiGateway"
           docker push $IMAGE_NAME:${{ env.TAG_NAME }}
