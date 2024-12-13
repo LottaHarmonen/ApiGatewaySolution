@@ -28,7 +28,7 @@ jobs:
       # Step 4: Build Docker Image
       - name: Build Docker Image
         run: |
-          IMAGE_NAME="lottah/ApiGateway"
+          IMAGE_NAME="lottah/apiGateway"
           docker build -t $IMAGE_NAME:${{ env.TAG_NAME }} -f ApiGatewaySolution/Dockerfile .
 
       # Step 5: Push Docker Image to Registry
