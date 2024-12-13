@@ -3,7 +3,7 @@ name: Docker Tag and Push - Api Gateway
 on:
   push:
     branches:
-      - main  # Använd 'master' om det behövs för ert projekt
+      - master  # Använd 'master' om det behövs för ert projekt
 
 jobs:
   tag-and-push:
